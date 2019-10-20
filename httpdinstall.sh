@@ -8,3 +8,5 @@ if [ $? -ne 0 ]; then
 else
 	echo "httpd has been installed."
 fi
+sudo systemctl start httpd.service
+sudo systemctl enable httpd.service
